@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400&family=Righteous&family=Rubik:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+header {
+  background-color: #ffcd9e;
+  height: 65vh;
+  display: flex;
+}
+header p {
+  font-size: 1rem;
+  width: 68%;
+}
+header input {
+  padding: 0.5rem 0.8rem;
+  outline: 2px black solid;
+}
+header button {
+  padding: 0.6rem 1.5rem;
+  margin-left: 0.5rem;
+  background-color: #282828;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+}
+header span {
+  color: #fff;
+  margin: 0 2rem;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.left-section {
+  padding: 3% 10%;
+  flex: 1;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.right-section {
+  flex: 1;
+  display: grid;
+  place-content: center;
+}
+
+.heading-text {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+.header-img {
+  transform: scale(0.8);
+}
+footer {
+  padding: 1rem 8rem;
+  background-color: #282828;
+  height: 35vh;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+footer li {
+  list-style: none;
+  padding: 0.2rem;
+  font-weight: 300;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-list-links {
+  color: #fff;
+}
+.right-list-links {
+  color: #fff;
+  text-align: right;
+}
+.icon-tray {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.success-heading {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.span-flex-start {
+  text-align: left;
+  margin: 0 0rem;
+}
+.error-message {
+  color: rgb(231, 18, 18);
 }
